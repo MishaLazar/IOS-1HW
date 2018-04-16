@@ -26,6 +26,7 @@ class LandingUIViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)
         
         LImg.image = lImageBackground
+      
     BtnStart.setBackgroundImage(BImage, for: UIControlState.normal)
         UserName.backgroundColor = UIColor.clear
         // Do any additional setup after loading the view.

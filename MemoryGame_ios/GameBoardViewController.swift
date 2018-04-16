@@ -18,11 +18,13 @@ class GameBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
     var delayCard = 1.5
     var count:Int = 10
     var timer:Timer?
+   
 //    var t = Timer()
 //    var secondsTillEndBase = 30
 //    var
     
     @IBOutlet weak var countDownLabel: UILabel!
+    @IBOutlet weak var playerNameLabel: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     let reuseIdentifier = "GameViewCellCollectionViewCell"
     var viewModel:GameViewModel!
@@ -52,7 +54,7 @@ class GameBoardViewController: UIViewController,UICollectionViewDelegate,UIColle
         
         self.count = self.count * self.cellsNumber
         self.countDownLabel.text = String( self.count)
-        
+        self.playerNameLabel.text = self.userName
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: Selector("updateTimerCountLabel"), userInfo: nil, repeats: true)
         
     }

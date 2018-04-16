@@ -12,7 +12,7 @@ class SelectLevelViewController: UIViewController {
     
     var backgroundImg:UIImage = #imageLiteral(resourceName: "background")
     var userName:String = ""
-    
+    var BImage:UIImage = #imageLiteral(resourceName: "ArrowToLeft")
     @IBOutlet weak var welcomeLabel:UILabel!
     
     @IBOutlet weak var btnL1:UIButton!
@@ -28,7 +28,9 @@ class SelectLevelViewController: UIViewController {
         self.view.insertSubview(backgroundImage, at: 0)        // Do any additional setup after loading the view.
         
         
-        print(userName)
+        btnL1.setBackgroundImage(BImage, for: UIControlState.normal)
+        btnL2.setBackgroundImage(BImage, for: UIControlState.normal)
+        btnL3.setBackgroundImage(BImage, for: UIControlState.normal)
         
         welcomeLabel.text = userName
     }
@@ -63,6 +65,7 @@ class SelectLevelViewController: UIViewController {
 
             vc.userName = self.userName
             vc.cellsNumber = cellsNumber
+            
             //self.present(vc, animated: true, completion:nil)
             //var navi = UINavigationController(rootViewController: vc)
             self.navigationController?.pushViewController(vc, animated: true)

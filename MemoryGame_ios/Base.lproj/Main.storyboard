@@ -194,15 +194,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULG-2K-r4q">
+                                <rect key="frame" x="317" y="28" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="flY-Hv-HFr" firstAttribute="top" secondItem="oaJ-Tm-Upl" secondAttribute="bottom" constant="8" symbolic="YES" id="1Mb-6S-ky0"/>
                             <constraint firstItem="Dvh-od-gXL" firstAttribute="leading" secondItem="F77-aD-omd" secondAttribute="leading" id="5FM-YE-ZdG"/>
                             <constraint firstAttribute="trailing" secondItem="Dvh-od-gXL" secondAttribute="trailing" id="74W-e4-RR0"/>
+                            <constraint firstItem="ULG-2K-r4q" firstAttribute="top" secondItem="oaJ-Tm-Upl" secondAttribute="bottom" constant="8" id="9k2-Lz-u8g"/>
                             <constraint firstItem="flY-Hv-HFr" firstAttribute="top" secondItem="oaJ-Tm-Upl" secondAttribute="bottom" constant="8" id="Mxp-E8-ML4"/>
                             <constraint firstItem="Dvh-od-gXL" firstAttribute="leading" secondItem="F77-aD-omd" secondAttribute="leading" id="Y8L-Nd-9uK"/>
                             <constraint firstAttribute="trailing" secondItem="Dvh-od-gXL" secondAttribute="trailing" id="ZCS-3k-MfQ"/>
+                            <constraint firstAttribute="trailing" secondItem="ULG-2K-r4q" secondAttribute="trailing" constant="16" id="cjr-mR-Uc3"/>
                             <constraint firstAttribute="trailing" secondItem="flY-Hv-HFr" secondAttribute="trailing" constant="317" id="m7f-UN-VMW"/>
                             <constraint firstItem="Dvh-od-gXL" firstAttribute="height" secondItem="F77-aD-omd" secondAttribute="height" multiplier="0.65" id="vo0-K3-Njs"/>
                             <constraint firstItem="flY-Hv-HFr" firstAttribute="leading" secondItem="F77-aD-omd" secondAttribute="leading" constant="16" id="w0u-cL-KCc"/>
@@ -213,6 +221,7 @@
                     <connections>
                         <outlet property="collectionView" destination="Dvh-od-gXL" id="RVR-sN-Ss1"/>
                         <outlet property="countDownLabel" destination="flY-Hv-HFr" id="PGD-QC-cPr"/>
+                        <outlet property="playerNameLabel" destination="ULG-2K-r4q" id="8vU-nf-FCV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ve8-La-7cM" userLabel="First Responder" sceneMemberID="firstResponder"/>
